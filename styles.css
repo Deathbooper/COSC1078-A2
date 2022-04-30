@@ -46,6 +46,13 @@ body,html {
   float: right;
 }
 
+
+.navbar a.current {
+  background-color: #ddd;
+  color: black
+
+}
+
 /* Change color on hover/mouse-over */
 .navbar a:hover {
   background-color: #ddd;
@@ -74,8 +81,10 @@ body,html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
   ;
 }
+
 
 /* Main column */
 .main {
