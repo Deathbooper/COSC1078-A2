@@ -87,6 +87,12 @@ body,html {
 	font-size: 20px;
 }
 
+.main a {
+  font-size: 20px;
+	font-weight: normal;
+  max-width: 80%
+}
+
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
