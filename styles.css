@@ -106,6 +106,10 @@ ul {
   max-width: 80%;
 }
 
+ol {
+  max-width: 80%;
+}
+
 .footer {
   padding: 20px;
   text-align: center;

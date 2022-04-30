@@ -31,8 +31,78 @@ body {
 	</div>
 </div>
   <div class="main">
-  <h1>Tools<h1>
-	<h2>.......</h2>
+  <h1>IT Project - MARPS<h1>
+    <h2>Project Idea</h2>
+    <p>The project idea is an app that allows RMIT students to easily find their classes in their buildings through an app that includes an augmented reality displayed on an iPhone/android. This project will allow students and staff to view a path to their room on their mobile devices. The path would be displayed in a clear manner, and it will be able to direct students and teachers quickly and easily. E.g., if a student cannot find room 42 in building 12 then the app will direct a path from wherever they are standing to the selected room. Through this app, it will dramatically decrease the confusion for students trying to find new rooms/ lecture theatres as it will be on a map like google maps street view.</p>
+
+    <h2>Motivation</h2>
+    <p>For this project idea was because when new RMIT students first walk into the RMIT buildings it is common for them to get lost as most had little to no idea as to where their rooms were, for their scheduled classes. The room numbers are helpful but to the students it is still considered a maze as getting to some rooms requires entry through other buildings to arrive at the intended room. Therefore, the idea that a RMIT AR map could be developed to help students to find their rooms more easily and save confusion. Another motivation for the idea was the need to keep up with changing technology, as time is moving on the usefulness of classic ‘maps’ has become outdated. Instead, a hybrid map such as AR maps will allow for little to no confusion to where users must go to.</p>
+
+    <h2>Device Aim</h2>
+    <p>The project will be based primarily for an iPhone. It will be aimed to integrate the use of AR technologies and maps to create a simple pathfinding application that will allow the users to find their rooms given that they are within a set distance from the building.</p>
+
+    <h2>Success Criteria</h2>
+    <ul>
+      <li>Display the location to at least 1 room in a building from within a set area</li>
+      <li>Be easy to understand and use</li>
+      <li>Successfully arrive at a specified room</li>
+      <li>Show structural dangers</li>
+      <li>Show emergency escape routes</li>
+    </ul>
+
+    <h2>Initial Primary Focus</h2>
+    <p>The initial focus for the project will be for students to find their way to one specific room in one building. The reason for this initial concept is because of the restraint of the timeframe for the project to be completed in. To produce a full working model that entails the whole building, the building would have to be constructed in a game engine such as unity, this is because the visualisation of the building will be much easier to understand on a 1:1 scale. By having a small realistic goal, it will allow for a higher quality application. The goal will be to have the application to allow the user to find their way to building 8/08/82, within the building 12 ground floor.</p>
+
+    <h2>How AR Paths can be Founded</h2>
+    <ol>
+      <li>An idea for how paths can be formed is a camera is taken around the building taking photos of certain areas that are x distance from the last photo, these photos would be collated together and ordered. From there coding would have to be done via a language such as python to have the application determine the quickest route to the room by collating the photos into a specific order. The application would then access the user's camera and draw a blue line along the floor toward the locations of the photos that were taken, photos would provide a backup for if the lines failed to work.</li>
+      <li>A 3d scan would be taken for the layout of the building and the floors would be grid referenced in XYZ, this will allow for a much higher detail for tracking. The distancing would be 1m x 1m squares, from there the squares would be labelled and put into an order, when a room is selected the pathfinding aspect would run a function to select which grid coordinates will lead to the door of the room. For example: the application will receive an input and determine where the user is through the camera, it will then determine the location of the user and create a path. The app would then display a blue line along the ground connecting to the edges of the squares that will lead to the room, the lines would be connected to 1x1m squares which will make the appearance of the lines jagged but will allow for a better tracking.</li>
+      <li>An application such as ARWAY would prove to be very quick and easy for the application, it would map the building through real time cloud-mapping. Cloud mapping is when a wireframe is created over surfaces to make a realistic projected model of the item. ARWAY uses a dot cloud to map the insides of buildings, it involves having key placed dots on specific structural identifiers. This acts as the maps ‘guide’ for when a path is made. An application such as this would create a much higher detailed in a short amount of time AR map in comparison to other applications.</li>
+    </ol>
+
+    <h2>Chosen Method to Find Paths</h2>
+    <p>We have chosen to use real time cloud mapping through the application ARWAY, to produce the scan of the physical environment. This is because there is an existing program that exists that will prove highly beneficial in the speed of production. The program uses an SDK based on unity to enable a scan to pin certain objects to allow the path to be quickly found. The ‘pins’ are used by the programming of the app to create an area of references. The references(pins) are the most important part of the programme.</p>
+
+    <h2>Useability</h2>
+    <p>The project will be designed around ease of use so that new students will be able to easily navigate the application. To do this the page design will be a large focus. The layout of instructions will have to be minimal and precise. A way this could be done is through having a ‘class search’ button so if the student does not know where their room is they can search it up easily through a database. Furthermore, the AR component should be a standing out colour and clearly show a path to the room that the user needs to go to, this could be done via a line that could be customized in terms of colour and width. Or could be a dotted line showing the path. When the user knows what room, they want to find they would be able to press a drop-down button named ‘buildings’ and then select their building, another dropdown would then appear called ‘rooms,’ the user will then select the room they wish to go to. The application would then triangulate their location and direct them. If the application does not meet user’s useability requirements it will become a clunky hassle and not meet the criteria for success.</p>
+
+    <h2>Further Opportunities</h2>
+    <p>This application will provide many opportunities for expansion in the future. It could serve to replace all RMIT maps and could be further expanded to act as a semi- replacement for class timetables. This is because it has the potential to guide students and staff alike in a much simpler to read way. A further opportunity could be to have the application direct users to certain events around the RMIT campus, such as an orientation event for new courses. The application could also be expanded even further to accommodate the CBD of Melbourne including which trams should be boarded. This will also allow travelling much easier for new people to the city as they will be able to see a clear precise path in an AR function rather than just a map on a screen. It would go into much further detail in comparison to the already existing google AR maps, as the program could include directions through shopping centres. The application would prove to be much more appealing than a regular map as it would be convenient.</p>
+
+    <h2>Software Required</h2>
+    <p>There is a broad range of possible software available to be able to complete the project idea. Some of the most applicable software that would be required to complete the application include.</p>
+    <ul>
+      <li><b>Python:</b> Python is a useful programming language that will aid the design and layout of the applications home pages and will allow for custom scripts to be made and executed. Python won't be the main program used in the project however due to there being AR tools already existing to aid production speed. The version of python to be used will be python3 as it is the latest update for python, another choice for python is it is a language that is widely known and easy to seek help on.</li>
+      <li><b>ARWAY:</b> Arway.app. 2022. ARWAY - Augmented Reality Software Kit | Framing the digital world. [online] Available at: <https://www.arway.app/> [Accessed 28 April 2022]. AR way is a spatial mapping system that uses an AI to map the area that is recorded through a camera lens. It provides the user with an SDK to create what they want to. The program will be the most crucial for the project as it will be the main program used to map the physical space into the online space. This program is used heavily in conjunction with Unity and the collated data from the recordings are visualised in unity. A crucial benefit to using ARWAY over AR tool kit and other programs is its ease of use and faster production speed.</li>
+      <li><b>Unity:</b> Technologies, U., 2022. Unity. [online] Unity. Available at: <https://unity.com/> [Accessed 28 April 2022]. Unity is a game engine that allows for apps to be published to the app store and to be made from scratch with little experience. The program allows for an environment to be constructed that will serve as the ‘scene’ of the map. Unity will be used in conjunction with ARWAY so that the data collected from ARWAY can be visualised and mapped. The main benefit to this app however is its ability to ‘test’ the application and view how it will run on different devices.</li>
+      <li><b>Phones:</b> Phones will be a crucial requirement for the development of the application as the physical environment needs to be scanned and uploaded to a computer. Phones will also be needed to test the finished application.</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <p>There will be some highly specialized skills that would be required to make this program. An AR expert would have to be brought in to consult as it is an important aspect to the application and I personally do not know how to do AR programs. There will also be a base skill presumed for basic programming in Python. Help would also have to be sought after for the database if one was created as it would possibly have to be linked to RMIT. Using online tutorials will greatly aid the understanding of how to program the application and would be the main source of help for the development stage.</p>
+
+    <h2>Initial Project Plan</h2>
+    <ol>
+      <li>First research must be done into what technologies will aid in the production of the project. Research for this will include internet research into existing AR technologies. This step is to be completed during assignment 1 and 2.</li>
+      <li>Secondly a report would have to be made where the progress can be documented down, A decision will have to be made for what program is to be used. This will be done in assignment 2 and 3.</li>
+      <li>Once the program has been decided we will have to learn how to use the program and how to scan an area using the program. This will be done in assignment 3.</li>
+      <li>An area will have to be scanned and uploaded to the whole group to access. From here the results would be exported to another program (unity) to be assembled into a graphically understandable state. Towards the middle of assignment 3.</li>
+      <li>A mock-up of what the app would be expected to look like would be put together whilst steps 3 and 4 are being completed. A mock up could be done on a program such as Figma, this application will allow for a sketch up to be done of the app to help visualise how it will work. Completed near the end of assignment 3.</li>
+      <li>Through unity the recorded data from step 5 would then be re-exported back to the program to create the interface for the user to use. Done straight after step 5.</li>
+      <li>Lastly the program would be downloaded as a useable app to be suitable for marking. Will be done at the very end of assignment 3.</li>
+    </ol>
+
+    <h2>Summary</h2>
+    <p>To summarise the building of AR maps. They are broken up into 6 steps</p>
+    <ol>
+      <li>A program is built to take a 3d spatial scan of a physical environment.</li>
+      <li>The application creates ‘pins’ on key structural points, these are used to guide a path</li>
+      <li>The pins are displayed on an SDK such as unity to visualise paths and draw connections between the ‘pins’, this is then displayed on the user's screen as a line</li>
+      <li>The SDK then has an interface developed to make navigation easy</li>
+      <li>The program is published to a mock version that can be tested and refined</li>
+      <li>The finished product. **A working AR map**</li>
+    </ol>
+    <p>When the project is successful it will allow for a much greater ease of navigation within RMIT’s buildings and will reduce time needed to find rooms. The original problem will be solved by implementing a map that physically shows the user on their phone though their camera where to go and how far the room is, as opposed to the current map system which shows floor plans but not how to reach the floor and room. By using the AR map, it would always be accessible on everybody's phone, and it would be much more convenient. The impact will be a great reduction of students getting lost and late students to class. The project is very achievable within the time constraints given that it is only for a select few destinations.</p>
 
   </div>
 </div>
